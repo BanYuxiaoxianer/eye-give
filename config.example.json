@@ -1,0 +1,26 @@
+{
+  "_说明": "复制到 ~/.config/eyegive/config.json（或与脚本同目录）。channels 按序降级，全挂时兜底 Ollama。",
+  "channels": [
+    {
+      "name": "primary",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "sk-你的key",
+      "model": "qwen-vl-max",
+      "timeout": 120,
+      "max_tokens": 3000
+    },
+    {
+      "name": "backup",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "api_key": "另一个key",
+      "model": "glm-4v-flash"
+    }
+  ],
+  "ollama_url": "http://127.0.0.1:11434",
+  "ollama_model": "llava",
+  "cache_ttl_seconds": 86400,
+  "max_input_mb": 50,
+  "allow_urls": false,
+  "timeout_seconds": 120,
+  "ocr_lang": "ch"
+}

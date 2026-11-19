@@ -1,0 +1,11 @@
+# 全部为可选依赖：核心（reasoning 通道链 + docx/pptx/xlsx/html/txt 解析）零依赖即可运行。
+# 按需安装，缺哪个对应功能自动降级并给出提示。
+
+# 大图自动压缩（可选，不装则原图发送）
+pillow
+
+# 本地 OCR（可选，不装则 OCR 自动走视觉模型兜底）
+rapidocr-onnxruntime
+
+# PDF 解析（可选，不装则 docx/pptx/xlsx/html/txt 仍可用）
+pymupdf

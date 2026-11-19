@@ -1,0 +1,14 @@
+# 含真实 API Key 的本地配置，绝不提交
+config.json
+.see_config.json
+*.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 缓存与测试数据
+.cache/
+testdata/
